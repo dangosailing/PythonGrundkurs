@@ -2,11 +2,10 @@ import filter_modules
 
 def filter_list():
   user_text = input("Enter a number of comma-separated strings: \n")
+  list_str = user_text.split(",")
   user_option = int(input("Select how you wish to modify the text\n1) Filter text for words containing a specific character\n2) Set max string length\n3) View list\n4) Quit program\n"))
   
-  list_str = user_text.split(",")
-
-  while user_option != 3:
+  while user_option != 4:
     if user_option == 1:
       user_target_char = input("Enter a character to filter the strings by: \n")
       user_text = filter_modules.filter_str_char(list_str, user_target_char)
