@@ -14,3 +14,7 @@ def search_user(user_list:list, user_name):
         found_user_list.append(user)
     return found_user_list
   
+def print_users(user_list:list):
+  for user in user_list:
+      print(f"name: {user["name"]} age: {user["age"]}")
+      
