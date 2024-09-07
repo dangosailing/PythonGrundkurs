@@ -19,3 +19,10 @@ def search_recepie(recepie_list:list):
             print(f"{query_matches} recepies with that title found")
     else:
         print("Recepie list empty")
+
+def list_recepies(recepie_list:list):
+    if recepie_list: #if lists are empty they are considered False
+        for recepie in recepie_list:
+            print(recepie["title"])
+    else:
+        print("Recepie list empty")
