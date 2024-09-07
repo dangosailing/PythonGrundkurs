@@ -16,8 +16,3 @@ def search_contacts(contact_list:list):
             print(f"name: {entry["name"]}, phone number:{entry["telephone_number"]}")
         else:
             print("No contact with that name was found")
-
-contact_test=[]
-contact_test = add_contact(contact_test)
-list_contacts(contact_test)
-search_contacts(contact_test)
