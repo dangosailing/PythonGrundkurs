@@ -11,8 +11,12 @@ def list_contacts(contact_list:list):
 
 def search_contacts(contact_list:list):
     name_query = input("Search for a name in the contact book: ").strip()
+    query_matches = 0
     for entry in contact_list:
         if entry["name"] == name_query:
             print(f"name: {entry["name"]}, phone number:{entry["telephone_number"]}")
-        else:
-            print("No contact with that name was found")
+            query_matches += 1 
+    if query_matches > 0:
+        print(f"{query_matches} contacts found with that name")
+    else:
+        print("No contact with that name was found")
