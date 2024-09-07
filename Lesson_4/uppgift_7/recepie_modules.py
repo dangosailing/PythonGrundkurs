@@ -10,10 +10,11 @@ def add_recepie(recepie_list:list):
 def search_recepie(recepie_list:list):
     if recepie_list: #if lists are empty they are considered False
         query_matches = 0
+        title = input("Enter the name of the dish:\n")
         for recepie in recepie_list:
-            if recepie["title"] == "rec1":
+            if recepie["title"] == title:
                 query_matches += 1
-                print(recepie["title"])
+                print(recepie)
         if query_matches == 0:
             print("No recepie with that title was found")
         else:
