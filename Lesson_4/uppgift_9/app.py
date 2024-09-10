@@ -13,22 +13,30 @@ Använd en huvudmodul som låter användaren hantera biblioteket.
 
 def library_manager():
     book_list = []
+    print("----------------------------")
     user_choice = int(input("1) Add new book\n2) Lend book\n3) Return book\n4) Quit program\n"))
+    print("----------------------------")
     while user_choice != 4:
         print("List out books in system")
         print(book_list)
         if user_choice == 1:
             library_modules.add_book(book_list)
             print("Book added")
+            print("----------------------------")
             user_choice = int(input("1) Add new book\n2) Lend book\n3) Return book\n4) Quit program\n"))
+            print("----------------------------")
         elif user_choice == 2:
             library_modules.lend_book(book_list)
             print("Book lended")
+            print("----------------------------")
             user_choice = int(input("1) Add new book\n2) Lend book\n3) Return book\n4) Quit program\n"))
+            print("----------------------------")
         elif user_choice == 3:
             library_modules.return_book(book_list)
             print("Book lended")
+            print("----------------------------")
             user_choice = int(input("1) Add new book\n2) Lend book\n3) Return book\n4) Quit program\n"))
+            print("----------------------------")
         elif user_choice == 4:
             print("Closing program")
             break
