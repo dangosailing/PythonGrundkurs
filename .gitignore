@@ -1,2 +1,5 @@
 manager.py
 __pycache__/
+Misc/
+.gitignore
+.DS_Store
